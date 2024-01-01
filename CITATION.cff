@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+title: constraint_aware_neural_networks
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Jim M.
+    family-names: Magiera
+    email: jim.magiera@ians.uni-stuttgart.de
+    affiliation: University of Stuttgart
+    orcid: 'https://orcid.org/0000-0001-9807-0784'
+identifiers:
+  - type: doi
+    value: 10.1016/j.jcp.2020.109345
+    description: JCP
+  - type: doi
+    value: 10.48550/arXiv.1904.12794
+    description: arXiv
+repository-code: >-
+  https://github.com/jim-max/constraint_aware_neural_networks
+license: MIT

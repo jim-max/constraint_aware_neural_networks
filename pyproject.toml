@@ -1,0 +1,67 @@
+[project]
+name = "constraint_aware_neural_networks"
+authors = [
+  { name = "Jim M. Magiera", email = "jim.magiera@ians.uni-stuttgart.de" },
+]
+version = "1.1.0"
+license = { text = "MIT" }
+readme = "README.md"
+requires-python = ">=3.10"
+
+dependencies = [
+  "numpy",
+  "pandas",
+  "scikit-learn",
+  "matplotlib",
+  "click",
+  "tqdm",
+  "torch",
+  "tensorboard",
+]
+
+[project.optional-dependencies]
+dev = ["ruff", "mypy", "pre-commit"]
+
+[project.scripts]
+constraint_aware_neural_networks = "constraint_aware_neural_networks.cli:cli"
+
+[project.urls]
+repository = "https://github.com/jim-max/constraint_aware_neural_networks"
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+[tool.black]
+line-length = 88
+
+[tool.isort]
+profile = "black"
+
+[tool.pylint.format]
+max-line-length = "88"
+
+[tool.mypy]
+ignore_missing_imports = true
+
+[tool.ruff]
+line-length = 88
+# see https://docs.astral.sh/ruff/rules/
+select = [
+  "E",   # Error
+  "F",   # pyflakes
+  "I",   # isort
+  "B",   # flake8-bugbear    
+  "S",   # bandit
+  "UP",  # pyupgrade
+  "W",   # Warning
+  "RUF", # ruff-specific
+  "NPY", # numpy
+  "PD",  # pandas
+  "TRY", # tryceratops (try-catch)
+  "PTH", # use pathlib
+  "DTZ", # datetime
+  # "FIX", # find todos fixme etc
+  # "D", # force documentation
+]
+src = ["src"]
