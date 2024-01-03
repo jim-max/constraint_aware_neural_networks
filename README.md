@@ -30,7 +30,9 @@ Setup [git-lfs](https://git-lfs.com/) and [pre-commit](https://pre-commit.com/ho
 
 ## Replication Data
 
-The replication data is available at _TBA_.
+The replication data is available at
+[DaRUS](https://darus.uni-stuttgart.de/dataset.xhtml?persistentId=doi:10.18419/darus-3869),
+[doi: 10.18419/darus-3869](https://doi.org/10.18419/darus-3869).
 Download it and put it into `data/`.
 
 ## Usage
