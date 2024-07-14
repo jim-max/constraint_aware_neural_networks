@@ -5,8 +5,6 @@ __pypackages__/
 .cache/
 __pycache__/
 *.egg-info/
-.pdm-build/
-.pdm-python
 
 /output
 

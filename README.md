@@ -4,16 +4,17 @@ Code of the paper "Constraint-Aware Neural Networks for Riemann Problems" for tr
 
 ## Installation
 
-### Using pdm
+### Using uv
 
-Install [pdm](https://github.com/pdm-project/pdm), for example via pipx:
+Install [uv](https://github.com/astral-sh/uv), for example via pipx:
 
         python -m pip install --user pipx
-        pipx install pdm
+        pipx install uv
 
-Then run pdm to set everything up:
+Then run uv to set everything up:
 
-        pdm sync -G:all
+        uv venv
+        uv pip install -e .[dev]
 
 ### Using pip
 
@@ -39,12 +40,12 @@ Download it and put it into `data/`.
 
 Run the CLI-tool:
 
-        pdm run constraint_aware_neural_networks train --help
+        uv run constraint_aware_neural_networks train --help
 
 Example:
 
-        pdm run constraint_aware_neural_networks train --model=isothermal_euler --algorithm=standard --data ./data/iso_euler_datasets/iso_euler_data_2000_n0/
+        uv run constraint_aware_neural_networks train --model=isothermal_euler --algorithm=standard --data ./data/iso_euler_datasets/iso_euler_data_2000_n0/
 
 Show tensorboard log:
 
-        pdm run tensorboard --logdir=./output/logs
+        uv run tensorboard --logdir=./output/logs

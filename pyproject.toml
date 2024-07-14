@@ -28,10 +28,6 @@ constraint_aware_neural_networks = "constraint_aware_neural_networks.cli:cli"
 [project.urls]
 repository = "https://github.com/jim-max/constraint_aware_neural_networks"
 
-[build-system]
-requires = ["pdm-backend"]
-build-backend = "pdm.backend"
-
 [tool.black]
 line-length = 88
 
