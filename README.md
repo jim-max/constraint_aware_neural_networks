@@ -1,5 +1,7 @@
 # Constraint-Aware Neural Networks
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21136525.svg)](https://doi.org/10.5281/zenodo.21136525)
+
 Code of the paper "Constraint-Aware Neural Networks for Riemann Problems" for training constraint-aware neural networks for various model problems, see [JCP](https://doi.org/10.1016/j.jcp.2020.109345) or [arxiv](https://doi.org/10.48550/arXiv.1904.12794).
 
 ## Installation

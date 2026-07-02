@@ -12,6 +12,9 @@ authors:
     orcid: 'https://orcid.org/0000-0001-9807-0784'
 identifiers:
   - type: doi
+    value: 10.5281/zenodo.21136525
+    description: zenodo
+  - type: doi
     value: 10.1016/j.jcp.2020.109345
     description: JCP
   - type: doi
